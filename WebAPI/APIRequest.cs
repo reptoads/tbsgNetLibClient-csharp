@@ -73,7 +73,7 @@ namespace NetLib.WebAPI
         private string value;
     };
 
-    internal struct API
+    internal struct Api
     {
         internal string url;
         internal uint port;
@@ -86,12 +86,14 @@ namespace NetLib.WebAPI
     {
         public static void Create(string url, uint port, uint projectId = 1,string cert = "./ca-bundle.crt")
         {
-            api = new API();
-            api.url = url;
-            api.port = port;
-            api.cert = cert;
-            api.projectId = projectId;
-            api.services = new Dictionary<Service, string>();
+            api = new Api
+            {
+                url = url,
+                port = port,
+                cert = cert,
+                projectId = projectId,
+                services = new Dictionary<Service, string>()
+            };
         }
 
         public static void AddService(Service service, string serviceDomain)
@@ -129,11 +131,8 @@ namespace NetLib.WebAPI
                     {
                         if (requestStream != null)
                         {
-                            // Open the stream using a StreamReader for easy access.  
                             StreamReader reader = new StreamReader(requestStream);
-                            // Read the content.  
                             string responseFromServer = reader.ReadToEnd();
-                            // Display the content.  
                             return new RequestResult((uint) ((HttpWebResponse) response).StatusCode,
                                 responseFromServer);
                         }
@@ -214,6 +213,6 @@ namespace NetLib.WebAPI
             return false;
         }
 
-        private static API api;
+        private static Api api;
     }
 }
