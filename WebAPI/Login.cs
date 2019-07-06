@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net.Configuration;
 using Newtonsoft.Json;
 
-namespace NetLib.WebAPI
+namespace tbsgNetLib.WebAPI
 {
 
     public struct Session

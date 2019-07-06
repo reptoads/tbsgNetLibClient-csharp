@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4D6CC2BB-D06C-4C51-9E49-26DCBE09A44A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>NetLib</RootNamespace>
-    <AssemblyName>NetLib</AssemblyName>
+    <RootNamespace>tbsgNetLib</RootNamespace>
+    <AssemblyName>tbsgNetLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

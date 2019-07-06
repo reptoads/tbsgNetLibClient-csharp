@@ -1,7 +1,6 @@
-﻿using System;
-using ENet;
+﻿using ENet;
 
-namespace NetLib
+namespace tbsgNetLib
 {
     public class Connection
     {

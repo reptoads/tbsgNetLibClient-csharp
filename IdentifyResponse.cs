@@ -1,4 +1,4 @@
-namespace NetLib
+namespace tbsgNetLib
 {
     public enum IdentifyResponse
 	{

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace NetLib.WebAPI
+namespace tbsgNetLib.WebAPI
 {
     public static class Data
     {

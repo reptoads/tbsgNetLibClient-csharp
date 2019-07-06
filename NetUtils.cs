@@ -1,8 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using NetLib;
-namespace NetLib{
+
+namespace tbsgNetLib{
 
 public class NetUtils{
 

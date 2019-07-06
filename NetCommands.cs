@@ -1,5 +1,5 @@
 ﻿
-namespace NetLib{
+namespace tbsgNetLib{
 
     public enum NetCommands
     {

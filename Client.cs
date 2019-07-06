@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using ENet;
-namespace NetLib{
+using Packet = tbsgNetLib.Packet;
+
+namespace tbsgNetLib{
 
     internal struct NetEvent
     {

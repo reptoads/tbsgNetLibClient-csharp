@@ -5,8 +5,7 @@ using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-
-namespace NetLib.WebAPI
+namespace tbsgNetLib.WebAPI
 {
     public enum WebMethod
     {
