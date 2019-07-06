@@ -164,7 +164,6 @@ namespace NetLib{
 
         }
 
-        //TODO: Add other built in cases like encryption
         private void HandlePacket(NetCommands command, Packet packet)
         {
             switch (command)
@@ -188,15 +187,6 @@ namespace NetLib{
                     SendPacket(NetCommands.Identify, identificationPacket);
                     Log("[NetLib] Identifying...");
                     break;
-
-                case NetCommands.Identify:
-                case NetCommands.NotIdentified:
-                case NetCommands.ConnectedWithoutEncryption:
-                case NetCommands.HandshakeServerKey:
-                case NetCommands.HandshakeDataKey:
-                case NetCommands.HandshakeFailed:
-                case NetCommands.CryptoPacket:
-                case NetCommands.CustomCommand:
                 default:
                     Log("[NetLib] command was not implemented");
                     break;

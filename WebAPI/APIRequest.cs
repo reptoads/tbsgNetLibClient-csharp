@@ -73,7 +73,7 @@ namespace NetLib.WebAPI
         private string value;
     };
 
-    internal class API
+    internal struct API
     {
         internal string url;
         internal uint port;
@@ -82,18 +82,16 @@ namespace NetLib.WebAPI
         internal Dictionary<Service, string> services;
     }
 
-    public static class ApiRequest
+    public static class APIRequest
     {
         public static void Create(string url, uint port, uint projectId = 1,string cert = "./ca-bundle.crt")
         {
-            api = new API
-            {
-                url = url,
-                port = port,
-                cert = cert,
-                projectId = projectId,
-                services = new Dictionary<Service, string>()
-            };
+            api = new API();
+            api.url = url;
+            api.port = port;
+            api.cert = cert;
+            api.projectId = projectId;
+            api.services = new Dictionary<Service, string>();
         }
 
         public static void AddService(Service service, string serviceDomain)

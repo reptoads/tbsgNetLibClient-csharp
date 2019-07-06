@@ -77,7 +77,7 @@ namespace NetLib.WebAPI
 
         public static Session Request(string username, string password)
         {
-            var loginRequest = ApiRequest.Request(Service.Login,WebMethod.POST,new List<RequestData>()
+            var loginRequest = APIRequest.Request(Service.Login,WebMethod.POST,new List<RequestData>()
             {
                 new RequestData(){Key = "username",Value = username},
                 new RequestData(){Key = "password",Value = password}
@@ -97,7 +97,7 @@ namespace NetLib.WebAPI
         }
         public static bool ValidateToken(string token)
         {
-            var response = ApiRequest.Request(Service.ValidateToken, WebMethod.POST, new List<RequestData>()
+            var response = APIRequest.Request(Service.ValidateToken, WebMethod.POST, new List<RequestData>()
             {
                 new RequestData(){Key = "token",Value = token}
             });
