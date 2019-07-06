@@ -12,4 +12,4 @@ all of this needs to be packet into a `.dll` and put in the `../bin` folder.
 
 ## Examples
 
-- [WebApi usagae](https://github.com/reptoads/tbsgNetLibClient-csharp/blob/master/Example/webapi.md)
+- [WebApi usage](https://github.com/reptoads/tbsgNetLibClient-csharp/blob/master/Example/webapi.md)
