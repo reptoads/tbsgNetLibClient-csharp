@@ -9,3 +9,7 @@ The project needs:
 - https://www.newtonsoft.com/json
 
 all of this needs to be packet into a `.dll` and put in the `../bin` folder.
+
+## Examples
+
+- [WebApi usagae](https://github.com/reptoads/tbsgNetLibClient-csharp/blob/master/Example/webapi.md)
