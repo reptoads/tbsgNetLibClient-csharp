@@ -82,7 +82,7 @@ namespace NetLib.WebAPI
         internal Dictionary<Service, string> services;
     }
 
-    public static class APIRequest
+    public static class ApiRequest
     {
         public static void Create(string url, uint port, uint projectId = 1,string cert = "./ca-bundle.crt")
         {
