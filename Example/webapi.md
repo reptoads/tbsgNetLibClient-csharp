@@ -2,6 +2,31 @@
 
 # Example use of the WebApi
 
+## Reference of `enum`
+
+```csharp
+namespace tbsgNetLib.WebAPI
+{
+    public enum WebMethod
+    {
+        GET = 0,
+        POST = 1
+    };
+
+    public enum Service
+    {
+        None,
+        Login,
+        Data,
+        Register,
+        ValidateToken,
+        UserDeck
+    };
+ [...]
+ }
+```
+
+
 ## ApiRequest
 
 ```csharp
