@@ -78,7 +78,7 @@
     <Compile Include="NetUtils.cs" />
     <Compile Include="Packet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebAPI\APIRequest.cs" />
+    <Compile Include="WebAPI\ApiRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
