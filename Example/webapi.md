@@ -25,7 +25,7 @@ namespace tbsgNetLib.WebAPI
  [...]
  }
 ```
-
+Source: [`WebAPI/APIRequest.cs`](https://github.com/reptoads/tbsgNetLibClient-csharp/blob/master/WebAPI/APIRequest.cs)
 
 ## ApiRequest
 
